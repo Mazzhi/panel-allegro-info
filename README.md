@@ -1,35 +1,45 @@
-# panel-allegro-info
-Dokumentacja własnej integracji z Allegro REST API — Sandbox
-# Mazhi Panel Sandbox v2
+# Mazhi Panel
 
 ## Cel aplikacji
 
-Własny panel integracyjny służący do testowania połączenia
-z Allegro REST API w środowisku Sandbox.
+Własny panel integracyjny rozwijany na potrzeby obsługi
+danych i ustawień sprzedaży własnego konta Allegro.
 
-Aplikacja jest rozwijana na potrzeby własne.
-To repozytorium zawiera wyłącznie publiczny opis aplikacji,
-bez kodu źródłowego i danych dostępowych.
+Repozytorium zawiera wyłącznie publiczną dokumentację
+aplikacji. Nie zawiera kodu źródłowego panelu,
+danych dostępowych ani tokenów OAuth.
 
-## Zakres działania
+## Środowiska
 
-- Autoryzacja konta testowego Allegro przez OAuth 2.0
-  Authorization Code.
-- Komunikacja z Allegro REST API w środowisku Sandbox.
+### Sandbox
 
+Środowisko służące do testowania integracji.
 
-## Środowisko i wersja
+Zarejestrowana aplikacja: Mazhi Panel Sandbox v2.
 
-- Środowisko: Allegro Sandbox.
-- Wersja aplikacji: [rzeczywista wersja, np. 0.1.0].
-- Status: rozwój i testy lokalne.
+### Produkcja
 
-## Bezpieczeństwo
+Przygotowywana integracja z własnym kontem produkcyjnym.
+Na obecnym etapie dostęp ograniczony jest do odczytu:
+- danych konta w celu identyfikacji połączenia;
+- ustawień sprzedaży: warunków zwrotów, gwarancji,
+  reklamacji oraz cenników dostaw.
 
-Repozytorium nie zawiera danych dostępowych, tokenów OAuth,
-plików .env ani danych kont użytkowników.
+Operacje zmieniające dane w Allegro są blokowane
+przez backend panelu.
 
-## Opiekun projektu i kontakt
+Zarejestrowana aplikacja: [dokładna nazwa aplikacji produkcyjnej].
+
+## Autoryzacja
+
+Panel wykorzystuje OAuth 2.0 Authorization Code.
+
+Zakresy używane przez obecną integrację:
+- allegro:api:profile:read
+- allegro:api:sale:settings:read
+
+## Opiekun i kontakt
+
 
 Projekt utrzymuje: Mazzhi
 Kontakt: Mazzhi
