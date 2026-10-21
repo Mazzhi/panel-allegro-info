@@ -2,44 +2,36 @@
 
 ## Cel aplikacji
 
-Własny panel integracyjny rozwijany na potrzeby obsługi
-danych i ustawień sprzedaży własnego konta Allegro.
+Mazhi Panel to własny panel integracyjny rozwijany na potrzeby obsługi sprzedaży na własnym koncie Allegro.
 
-Repozytorium zawiera wyłącznie publiczną dokumentację
-aplikacji. Nie zawiera kodu źródłowego panelu,
-danych dostępowych ani tokenów OAuth.
+Aplikacja umożliwia przeglądanie zamówień i ofert oraz zarządzanie lokalnymi informacjami wspierającymi obsługę sprzedaży, w tym statusami obsługi i wewnętrzną numeracją zamówień.
 
-## Środowiska
+Aplikacja nie jest udostępniana jako publiczna usługa dla innych sprzedawców.
 
-### Sandbox
+## Środowisko produkcyjne
 
-Środowisko służące do testowania integracji.
+Nazwa aplikacji zarejestrowanej w Allegro Developer: **Mazhi Panel**.
 
-Zarejestrowana aplikacja: Mazhi Panel Sandbox v2.
+Środowisko produkcyjne służy do obsługi rzeczywistych danych własnego konta Allegro.
 
-### Produkcja
+## Środowisko testowe
 
-Przygotowywana integracja z własnym kontem produkcyjnym.
-Na obecnym etapie dostęp ograniczony jest do odczytu:
-- danych konta w celu identyfikacji połączenia;
-- ustawień sprzedaży: warunków zwrotów, gwarancji,
-  reklamacji oraz cenników dostaw.
+Do testowania integracji wykorzystywane jest odrębne środowisko Allegro Sandbox.
 
-Operacje zmieniające dane w Allegro są blokowane
-przez backend panelu.
+Nazwa aplikacji testowej zarejestrowanej w Allegro Developer: Mazhi Panel Sandbox v2.
 
-Zarejestrowana aplikacja: [dokładna nazwa aplikacji produkcyjnej].
+## Zawartość repozytorium
 
-## Autoryzacja
+Repozytorium zawiera wyłącznie publiczną dokumentację informacyjną aplikacji.
 
-Panel wykorzystuje OAuth 2.0 Authorization Code.
+Nie zawiera:
+- kodu źródłowego panelu;
+- danych zamówień ani danych klientów;
+- danych dostępowych i haseł;
+- kluczy Client Secret;
+- tokenów dostępowych ani tokenów odświeżania OAuth;
+- prywatnych plików konfiguracyjnych.
 
-Zakresy używane przez obecną integrację:
-- allegro:api:profile:read
-- allegro:api:sale:settings:read
+## Kontakt
 
-## Opiekun i kontakt
-
-
-Projekt utrzymuje: Mazzhi
-Kontakt: Mazzhi
+Pytania dotyczące aplikacji można zgłaszać przez zakładkę Issues w tym repozytorium.
